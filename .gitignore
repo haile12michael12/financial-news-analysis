@@ -12,3 +12,7 @@ venv/
 
 # VSCode
 .vscode/
+# Add to .gitignore to avoid future conflicts
+echo "*.ipynb_checkpoints" >> .gitignore
+echo "notebooks/*.ipynb" >> .gitattributes
+echo "*.ipynb merge=nbmerge" >> .gitattributes
