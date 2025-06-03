@@ -1,7 +1,15 @@
 # News & Stock Data Analysis Project
-This repository contains analysis of financial news data for market insights.
-## Project Overview
-A comprehensive data science project to analyze news articles and their correlation with stock price movements. The project is structured into three main tasks: Exploratory Data Analysis (EDA) of news data, quantitative analysis of stock prices using financial indicators, and correlation analysis between news sentiment and stock returns.
+Welcome to the Financial News & Stock Analysis Project — a data science pipeline that explores how financial news sentiment correlates with stock market movements. This project combines text analytics, technical indicators, and statistical correlation to uncover actionable insights.
+## Project Overview 
+# This project is structured into three key tasks:
+
+ 1. Exploratory Data Analysis (EDA) of financial news.
+
+ 2. Quantitative Analysis of stock prices using technical indicators.
+
+ 3. Sentiment-Correlation Analysis between news and stock returns.
+
+ - It showcases the full workflow from data wrangling to modeling, with emphasis on - - reproducibility, modularity, and CI/CD integration.
 ## Project Structure
 
 - Financial-news-analysis/
@@ -26,88 +34,48 @@ A comprehensive data science project to analyze news articles and their correlat
 
 ## Key Performance Indicators (KPIs)
 
-- **Proactivity to Self-Learn:** Evidence of using and sharing external references.
-- **Dev Environment Setup:** Proper folder structure, version control, and CI/CD.
-- **EDA Techniques:** Use of descriptive statistics, visualization, and NLP.
-- **Accuracy of Indicators:** Correct calculation and interpretation of financial metrics.
-- **Completeness of Analysis:** All required analyses performed and documented.
-- **Sentiment & Correlation Analysis:** Effective sentiment scoring and statistical correlation.
+- ✅Clean and modular project structure.
 
-## Tasks
+- ✅ Git & GitHub usage with proper branching and commits.
 
-### Task 1: Git and GitHub
-**Objectives:**
-- Set up a Python development environment with version control and CI/CD.
-- Perform Exploratory Data Analysis (EDA) on news articles.
+- ✅ Automated testing via GitHub Actions.
 
-**Steps:**
-1. **Repository Setup**
-   - Create a GitHub repository with the above folder structure.
-   - Create a new branch called `task-1` for your analysis.
-   - Commit your work at least three times a day with descriptive messages.
+- ✅ EDA using NLP and statistical techniques.
 
-2. **Exploratory Data Analysis**
-   - **Descriptive Statistics:**  
-     - Calculate basic statistics for textual data (e.g., headline length).
-     - Count articles per publisher.
-     - Analyze publication dates for trends.
-   - **Text Analysis (Topic Modeling):**  
-     - Use NLP to extract common keywords, phrases, and topics.
-   - **Time Series Analysis:**  
-     - Analyze publication frequency over time.
-     - Identify publication time patterns.
-   - **Publisher Analysis:**  
-     - Identify top publishers and analyze their news types.
-     - If publishers are emails, extract domains to find frequent organizations.
+- ✅ Financial metrics with TA-Lib & PyNance.
 
-### Task 2: Quantitative Analysis Using PyNance and TA-Lib
-**Objectives:**
-- Load and analyze stock price data using financial indicators.
+- ✅ Correlation between sentiment and market performance.
+###  Tasks Summary
+## **Task 1: GitHub Setup & News EDA**
+- ✅ Create repo and GitHub workflows.
 
-**Steps:**
-1. **Branching & Merging**
-   - Merge `task-1` into `main` via Pull Request.
-   - Create a new branch `task-2` for this task.
+- ✅ Perform EDA on news: keyword extraction, publisher analysis, and time-series trends.
 
-2. **Data Preparation**
-   - Load stock price data (`Open`, `High`, `Low`, `Close`, `Volume`) into a pandas DataFrame.
-   - Load and prepare stock price data into a pandas DataFrame.
-   - Include columns like Open, High, Low, Close, and Volume.
+- ✅ Use NLP for topic modeling.
 
-3. **Technical Analysis**
-   - Calculate indicators using TA-Lib (e.g., Moving Averages, RSI, MACD).
-   - Use PyNance for additional financial metrics.
+## 📊 **Task 2: Stock Price Analysis**
+- ✅ Analyze stock data (Open, Close, Volume, etc.).
 
-4. **Visualization**
-   - Visualize stock data and indicators to understand trends and patterns.
+- ✅ Compute indicators like SMA, RSI, and MACD using TA-Lib & PyNance.
 
-### Task 3: Correlation Between News and Stock Movement
-**Objectives:**
-- Analyze the relationship between news sentiment and stock price movements.
+- ✅ Visualize trends with Matplotlib/Plotly.
 
-**Steps:**
-1. **Branching & Merging**
-   - Merge `task-2` into `main` via Pull Request.
-   - Create a new branch `task-3` for this task.
+## **Task 3: Sentiment vs. Stock Returns**
+- ✅ Score news headlines with NLTK or TextBlob.
 
-2. **Data Preparation**
-   - Align news and stock datasets by date.
-   - Normalize timestamps as needed.
+- ✅ Align news and stock data by date.
 
-3. **Sentiment Analysis**
-   - Use tools like NLTK or TextBlob to assign sentiment scores (positive, negative, neutral) to news headlines.
+- ✅ Compute daily returns and analyze correlation with sentiment.
 
-4. **Stock Movement Calculation**
-   - Compute daily stock returns (percentage change in closing prices).
+## Technologies Used
 
-5. **Correlation Analysis**
-   - Aggregate daily sentiment scores.
-   - Calculate Pearson correlation between average daily sentiment and daily stock returns.
-
-## Minimum Essential To Do
-- Merge necessary branches into the main branch using Pull Requests.
-- Create new branches for ongoing development (e.g., `task-2`, `task-3`).
-- Commit work with descriptive messages.
+- **Python**: Programming language used for data analysis.
+- **Pandas**: Data manipulation and analysis library.
+- **NumPy**: Library for numerical operations.
+- **Scikit-learn**: Machine learning library for implementing algorithms.
+- **Matplotlib/Seaborn**: Libraries for data visualization.
+- **NLTK/TextBlob**: Libraries for natural language processing.
+- **GitHub Actions**: CI/CD for automated testing and deployment.
 ## Getting Started
 
 ### Prerequisites
@@ -129,8 +97,6 @@ A comprehensive data science project to analyze news articles and their correlat
 3. Install dependencies:
  - pip install -r requirements.txt
 
-## Usage
-- Run Jupyter notebooks in the notebooks/ directory to execute the analysis
 
 ## CI/CD
 - All pushes and pull requests trigger unit tests via GitHub Actions.
