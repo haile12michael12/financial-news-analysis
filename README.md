@@ -53,7 +53,7 @@ Welcome to the Financial News & Stock Analysis Project — a data science pipeli
 
 - ✅ Use NLP for topic modeling.
 
-## 📊 **Task 2: Stock Price Analysis**
+## **Task 2: Stock Price Analysis**
 - ✅ Analyze stock data (Open, Close, Volume, etc.).
 
 - ✅ Compute indicators like SMA, RSI, and MACD using TA-Lib & PyNance.
